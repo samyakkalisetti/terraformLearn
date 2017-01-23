@@ -1,0 +1,6 @@
+---
+- name: Start dse
+  service: name=dse state=started
+
+- name: Reload dse
+  service: name=dse state=reloaded
