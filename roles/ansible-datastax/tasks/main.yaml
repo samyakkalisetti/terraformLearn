@@ -1,6 +1,6 @@
 ---
 - name: Add repo Config
-  copy: src=datastax.repo dest=/etc/yum.repos.d owner=root group=root
+  copy: src=datastax.repo dest=/etc/yum.repos.d/datastax.repo owner=root group=root
 
 - name: Add cassandra config
   copy: src=cassandra.yaml dest=/etc/yum.repos.d owner=root group=root
