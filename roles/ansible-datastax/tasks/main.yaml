@@ -9,7 +9,7 @@
 
 - name: Install dse
   become_method: sudo
-  yum: pkg=dse-full-5.0.0 state=installed update_cache=true
+  yum: pkg=dse-full-5.0.1 state=installed update_cache=true
   register: dseinstalled
   notify:
     - Start dse
