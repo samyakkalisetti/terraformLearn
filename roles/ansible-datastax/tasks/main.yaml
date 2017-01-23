@@ -17,4 +17,4 @@
 - name: Add cassandra Config
   become_method: sudo
   register: cassandraconfig
-  template: src=templates/cassandra.yaml.j2 dest=/etc/yum.repos.d/cassandra.yaml owner=root group=root
+  template: src=roles/ansible-datastax/templates/cassandra.yaml.j2 dest=/etc/yum.repos.d/cassandra.yaml owner=root group=root
